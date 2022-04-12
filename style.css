@@ -1,7 +1,47 @@
+body {
+    padding: 0 10px;
+}
+
+.images {
+    width: 100%;
+}
+
+/* Front Page */
+
 .btn {
   background-color: #58bc54;
   border-color: #58bc54;
 }
+
 .navbar{
     background-color: #e8ccac;
+}
+
+.navbar-item {
+    text-align: center;
+}
+
+.divider{
+    border-top: 8px solid;
+}
+
+.small-divider{
+    border-top: 3px solid;
+    width: 25%;
+    margin: 5px auto;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* About, Welcome */
+#welcome, #about {
+    text-align: center;
+    margin: 10px 0;
 }

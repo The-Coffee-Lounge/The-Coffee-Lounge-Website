@@ -12,28 +12,114 @@
     
 </head>
 
-<body>
+
+<!-- Body Color -->
+<body style="background-color: #e8ccac">
+
+    
+<div id="frontpage">
+
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="row mx-auto">
-            <div class="col-4 mx-auto">
-                <button type="button" class="btn btn-success">Menu</button>
+            <div class="col navbar-item align-items-center d-flex">
+                <a href="#about" type="button" class="btn btn-success btn-lg">About</a>
             </div>
             
-            <div class="col-3">
-                <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t1.15752-9/275630771_365579732132078_1017942639025701544_n.png?_nc_cat=102&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFoZYwnv7TqszJ06L0u3r8XzmRyr7hSDvLOZHKvuFIO8m2rBjrSGVH1sKLlS69PgC9aHhU4RjpWRsx0QYRXa_Xd&_nc_ohc=CMeCotya6fsAX-_Ir8V&tn=GEph5cyz9HyFWBKw&_nc_ht=scontent.fmnl5-2.fna&oh=03_AVKGElTHoeFAys9la4-YImWBbxaPtCC4v4Hn-njxY9rXuw&oe=624CA821" width="35">
+            <div class="col navbar-item d-flex">
+                <img src="images/tcl-logo.png" style="width: 100%;">
             </div>
     
-            <div class="col-4">
-                <button type="button" class="btn btn-success">Contact</button>
+            <div class="col navbar-item align-items-center d-flex">
+                <atype="button" class="btn btn-success btn-lg">Menu</a>
             </div>
-
+    
         </div>
     </nav>
+    
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- To Tin: Tinanggal ko nalang yung row kasi nagkakaroon ng horizontal scrollbar ang page, it works the same naman na divider div lang :) -->
 
-    <!-- Bootstrap JS Components. Dont modify -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Front Page Title -->
+    <div class="header">
+        <center>
+        <br>
+        <h1>The Coffee Lounge</h1>
+        <br>
+        </center>
+    </div>
+    
+    <!-- Front Page Carousel -->
+    <div id="frontpageCarousel" class="carousel slide" data-ride="carousel">
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t1.15752-9/277234715_547913803325156_1695829316508411551_n.png?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeEpRiRyO9lkCBgyP0PFpFU7qJiLsVHxULqomIuxUfFQuqB411hGhpxIWDMpzctI0L4csmHsQtNZ0JhPlQ1EMHn1&_nc_ohc=2BTPHUiZNZsAX9Rue-5&_nc_ht=scontent.fmnl5-2.fna&oh=03_AVJWUdmBSJi7v8rCB2By78xapxuyXmKjN0LGsFOQvjDfjA&oe=6272697A" alt="..." style="width:100%;">
+            </div>
+    
+            <div class="carousel-item">
+                <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t1.15752-9/276153598_496757125446584_1812199200669438914_n.png?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeHCBye40hPf-L-aASh6XmaNPzlDSgu1qtw_OUNKC7Wq3Ez-V96ZYQjV6s2lSnTXv6q9pEuvayp7g2CI6tYu5tpP&_nc_ohc=1izxsTZlm40AX9ByfPx&tn=GEph5cyz9HyFWBKw&_nc_ht=scontent.fmnl5-2.fna&oh=03_AVKVeo8pF-a7glpHwH6uwWsh7Inx5ORS7oxCCx2vlQ6SGA&oe=62746018" alt="Chicago" style="width:100%;">
+            </div>
+        
+            <div class="carousel-item">
+                <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t1.15752-9/277614325_5022944977763135_9184056703111136031_n.png?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeHszlDkHg2blmUz7ZbP8OcErvViM-Xhf7eu9WIz5eF_twR5rwepTVz4uUdzJr1LnmCGL_Pw7mPtZkCuAT2SeLw5&_nc_ohc=tNu7EqV5ksgAX9V-cvS&_nc_ht=scontent.fmnl5-2.fna&oh=03_AVItXJ_yIfwztDhx3wKCiXBZa_j1DNkiC3Rwiee0DC_rzA&oe=62729812" alt="New york" style="width:100%;">
+            </div>
+            
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#frontpageCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#frontpageCarousel" role="button" data-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        
+    </div>
+</div>
+
+    
+<!-- Welcome -->
+<div id="welcome">
+    <h2>Welcome</h2>
+    <div class="small-divider"></div>
+    <p>The Coffee Lounge is a public, five-star coffee shop, located in the heart of Metro Manila. Serving exceptional coffee, partnered with our famous bread products, your experience in The Coffee Lounge will be nothing short of extravagant and relaxing.</p>
+    <div class="small-divider"></div>
+</div>
+
+    
+<!-- About Us -->
+<div id="about">
+    <h2>About Us</h2>
+    <div class="about-stories">
+        <img class="images  about-images" src="https://picsum.photos/300/150">
+        <p class="about-paragraphs">Established in 2020, The Coffee Lounge first started as a simple experiment by its owner, Mr. Adriane James Puzon. Starting in a small apartment room hidden in the heart of Makati, the menu only consisted of 5 coffee drinks, and never consisted of any breakfast nor bread.</p>
+    </div>
+
+    <div class="about-stories">
+        <img class="images about-images" src="https://picsum.photos/300/150">
+        <p class="about-paragraphs">However, with more customers coming back to The Coffee Lounge, extensions were needed, and in 2021, The Coffee Lounge finally opened its new and improved shop, which became a 2-storey shop, where its customers can bring their colleagues to relax, while giving enough workspace to work on group projects.</p>
+    </div>
+
+    <div class="about-stories">
+        <img class="images about-images" src="https://picsum.photos/300/150">
+        <p class="about-paragraphs">Integer blandit quam sit amet interdum mollis. Proin sollicitudin dapibus mauris nec blandit. Aenean ultrices sem non erat fermentum, euismod vulputate nibh auctor. Suspendisse in dictum sem. Aenean accumsan cursus erat dignissim vulputate. </p>
+    </div>
+
+</div>
+
+
+
+    
+
+<!-- Bootstrap JS Components. Dont modify -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
