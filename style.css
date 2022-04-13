@@ -21,6 +21,7 @@ body {
     text-align: center;
 }
 
+
 .divider{
     border-top: 8px solid;
 }
@@ -43,5 +44,21 @@ body {
 /* About, Welcome */
 #welcome, #about {
     text-align: center;
+    margin: 10px 0;
+}
+
+.padding{
+    padding-right:0;
+    padding-left:0;
+}
+
+.row-2{
+  text-align: center;
+}
+
+
+/* Image Gallery */
+#image-gallery {
+    background-color: red;
     margin: 10px 0;
 }
