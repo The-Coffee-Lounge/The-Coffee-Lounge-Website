@@ -47,18 +47,20 @@ body {
     margin: 10px 0;
 }
 
-.padding{
-    padding-right:0;
-    padding-left:0;
-}
-
-.row-2{
-  text-align: center;
+/* Footer */
+#footer {
+    text-align: center;
 }
 
 
 /* Image Gallery */
-#image-gallery {
-    background-color: red;
-    margin: 10px 0;
+.carousel-indicators, .carousel-caption {
+    position: relative;
+    color: black;
+    left: auto;
+    right: auto;
+}
+
+.carousel-indicators {
+    
 }
