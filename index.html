@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width">
     <title>The Coffee Lounge</title>
 
+    <!-- Averia Serif Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS Stylesheet. Don't modify -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -24,6 +29,8 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 
     <script src="script.js"></script>
+
+
 </head>
 
 
@@ -38,7 +45,7 @@
         <nav class="navbar">
             <div class="row mx-auto">
                 <div class="col navbar-item align-items-center d-flex">
-                    <a href="#about" type="button" class="btn btn-success btn-lg">About</a>
+                    <a href="#about" type="button" class="btn btn-success btn-lg">ABOUT</a>
                 </div>
 
                 <div class="col navbar-item d-flex">
@@ -46,22 +53,25 @@
                 </div>
 
                 <div class="col navbar-item align-items-center d-flex">
-                    <a type="button" class="btn btn-success btn-lg">Menu</a>
+                    <a type="button" class="btn btn-success btn-lg">MENU</a>
                 </div>
 
             </div>
         </nav>
 
         <!-- Divider -->
-        <div class="divider"></div>
+        <center>
+            <div id="navbar-divider" class="divider"></div>
+        </center>
         <!-- To Jay: okay po!-->
 
         <!-- Front Page Title -->
         <div class="header">
             <center>
-                <br>
+                <!--                 <br>
                 <h1>The Coffee Lounge</h1>
-                <br>
+                <br> -->
+                <img src="images/tlc-banner.png" class="images">
             </center>
         </div>
 
@@ -105,25 +115,28 @@
     <div id="welcome">
         <h2>Welcome</h2>
         <div class="small-divider"></div>
-        <p>The Coffee Lounge is a public, five-star coffee shop, located in the heart of Metro Manila. Serving
-            exceptional coffee, partnered with our famous bread products, your experience in The Coffee Lounge will be
+        <p>The Coffee Lounge is a public, five-star coffee shop, located in the heart of Metro Manila. </p>
+        <p>Serving exceptional coffee, partnered with our famous bread products, your experience in The Coffee Lounge
+            will be
             nothing short of extravagant and relaxing.</p>
         <div class="small-divider"></div>
     </div>
 
 
     <!-- About Us -->
-    <div id="about">
+    <div id="about-us">
         <h2>About Us</h2>
         <div class="about-stories">
-            <img class="images  about-images" src="https://picsum.photos/300/150">
+            <img class="images about-images"
+                src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/outdoor-renders/TCL%20-%20PICTURE%202%20(OUTSIDE).png">
             <p class="about-paragraphs">Established in 2020, The Coffee Lounge first started as a simple experiment by
                 its owner, Mr. Adriane James Puzon. Starting in a small apartment room hidden in the heart of Makati,
                 the menu only consisted of 5 coffee drinks, and never consisted of any breakfast nor bread.</p>
         </div>
 
         <div class="about-stories">
-            <img class="images about-images" src="https://picsum.photos/300/150">
+            <img class="images about-images"
+                src="https://github.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/blob/master/outdoor-renders/TCL%20-%20Picture%201%20(OUTSIDE).png?raw=true">
             <p class="about-paragraphs">However, with more customers coming back to The Coffee Lounge, extensions were
                 needed, and in 2021, The Coffee Lounge finally opened its new and improved shop, which became a 2-storey
                 shop, where its customers can bring their colleagues to relax, while giving enough workspace to work on
@@ -131,7 +144,8 @@
         </div>
 
         <div class="about-stories">
-            <img class="images about-images" src="https://picsum.photos/300/150">
+            <img class="images about-images"
+                src="https://github.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/blob/master/outdoor-renders/the-coffee-lounge-2nd-floor-facing-from-the-outside-railing-day.png?raw=true">
             <p class="about-paragraphs">Integer blandit quam sit amet interdum mollis. Proin sollicitudin dapibus mauris
                 nec blandit. Aenean ultrices sem non erat fermentum, euismod vulputate nibh auctor. Suspendisse in
                 dictum sem. Aenean accumsan cursus erat dignissim vulputate. </p>
@@ -146,7 +160,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="carousel-caption">
-                        <h5>1st Floor Lounge</h5>
+                        <h5>Entrance</h5>
                     </div>
                     <img src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 1 (1ST FLOOR).png"
                         class="d-block w-100" alt="...">
@@ -223,55 +237,6 @@
                 </div>
             </div>
 
-            <!-- Image Gallery Bottom Indicators -->
-
-            <ol class="carousel-indicators h-100">
-                <li data-target=".image-gallery" data-slide-to="0">
-                    <img src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 1 (1ST FLOOR).png"
-                        class="d-block w-100" alt="...">
-                </li>
-                <li data-target=".image-gallery" data-slide-to="1">
-                    <img src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 2 (1ST FLOOR).png"
-                        class="d-block w-100" alt="...">
-                </li>
-                <li data-target=".image-gallery" data-slide-to="2">
-                    <img src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 3 (1ST FLOOR).png"
-                        class="d-block w-100" alt="...">
-                </li>
-                <li data-target=".image-gallery" data-slide-to="3">
-                    <img src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 4 (1ST FLOOR).png"
-                        class="d-block w-100" alt="...">
-                </li>
-                <li data-target=".image-gallery" data-slide-to="4">
-                    <img src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 5 (1ST FLOOR).png"
-                        class="d-block w-100" alt="...">
-                </li>
-                <li data-target=".image-gallery" data-slide-to="5">
-                    <img src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 1 (2ND FLOOR).png"
-                        class="d-block w-100" alt="...">
-                </li>
-                <li data-target=".image-gallery" data-slide-to="6">
-                    <img src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 2 (2ND FLOOR).png"
-                        class="d-block w-100" alt="...">
-                </li>
-                <li data-target=".image-gallery" data-slide-to="7">
-                    <img src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 3 (2ND FLOOR).png"
-                        class="d-block w-100" alt="...">
-                </li>
-                <li data-target=".image-gallery" data-slide-to="8">
-                    <img src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 4 (2ND FLOOR).png"
-                        class="d-block w-100" alt="...">
-                </li>
-                <li data-target=".image-gallery" data-slide-to="9">
-                    <img src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 5 (2ND FLOOR).png"
-                        class="d-block w-100" alt="...">
-                </li>
-                <li data-target=".image-gallery" data-slide-to="10">
-                    <img src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 6 (2ND FLOOR).png"
-                        class="d-block w-100" alt="...">
-                </li>
-            </ol>
-
             <!-- Image Gallery Controls -->
 
             <a class="carousel-control-prev" type="button" data-target=".image-gallery" data-slide="prev">
@@ -285,31 +250,77 @@
             </a>
 
         </div>
+
+        <div class="gallery-view-indicators">
+            <img data-target="#image-gallery" data-slide-to="0"
+                src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 1 (1ST FLOOR).png"
+                class="d-block w-75 gallery-view-indicator-active" alt="...">
+            <img data-target="#image-gallery" data-slide-to="1"
+                src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 2 (1ST FLOOR).png"
+                class="d-block w-75 gallery-view-indicator-inactive" alt="...">
+            <img data-target="#image-gallery" data-slide-to="2"
+                src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 3 (1ST FLOOR).png"
+                class="d-block w-75 gallery-view-indicator-inactive" alt="...">
+            <img data-target="#image-gallery" data-slide-to="3"
+                src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 4 (1ST FLOOR).png"
+                class="d-block w-75 gallery-view-indicator-inactive" alt="...">
+            <img data-target="#image-gallery" data-slide-to="4"
+                src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 5 (1ST FLOOR).png"
+                class="d-block w-75 gallery-view-indicator-inactive" alt="...">
+            <img data-target="#image-gallery" data-slide-to="5"
+                src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 1 (2ND FLOOR).png"
+                class="d-block w-75 gallery-view-indicator-inactive" alt="...">
+            <img data-target="#image-gallery" data-slide-to="6"
+                src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 2 (2ND FLOOR).png"
+                class="d-block w-75 gallery-view-indicator-inactive" alt="...">
+            <img data-target="#image-gallery" data-slide-to="7"
+                src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 3 (2ND FLOOR).png"
+                class="d-block w-75 gallery-view-indicator-inactive" alt="...">
+            <img data-target="#image-gallery" data-slide-to="8"
+                src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 4 (2ND FLOOR).png"
+                class="d-block w-75 gallery-view-indicator-inactive" alt="...">
+            <img data-target="#image-gallery" data-slide-to="9"
+                src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 5 (2ND FLOOR).png"
+                class="d-block w-75 gallery-view-indicator-inactive" alt="...">
+            <img data-target="#image-gallery" data-slide-to="10"
+                src="https://raw.githubusercontent.com/The-Coffee-Lounge/The-Coffee-Lounge-3D-Model/master/indoor-renders/TCL - PICTURE 6 (2ND FLOOR).png"
+                class="d-block w-75 gallery-view-indicator-inactive" alt="...">
+        </div>
     </div>
 
+    <br>
+
+    <div id="specialties" class="row bg-success">
+
+        <div class="col-5 padding bg-success">
+            <img src="images/breakfast-meal.png" class="float-left" style="width:100%;">
+
+        </div>
+        <div class="col-6 padding"><br>
+            Exceptional Breakfast
+        </div>
+        <br>
+    </div>
 
     <!-- Divider -->
     <div class="divider"></div>
 
-    
     <!-- Copyright -->
     <br>
     <div id="copyright" class="row">
-        <div class="col-5 padding">
-            <img src="images/tcl-logo.png" class="float-right" style="width:60%;">
+        <div class="col-5">
+            <img src="images/tcl-logo.png" class="float-right" style="width:50%;">
         </div>
-        <div class="col-6 padding"><br>
-            (C) 2022. The Coffee Lounge <br>
+        <div class="col-6">
+            © 2022. The Coffee Lounge <br>
             All rights reserved.
         </div>
     </div>
     <br>
 
-    
     <!-- Divider -->
     <div class="divider"></div>
 
-    
     <!--Footer-->
     <br>
     <div class="row" id="footer">
@@ -325,13 +336,6 @@
         </div>
     </div>
     <br>
-
-    <script>
-        let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-        console.log(vh);
-        var root_image_gallery = document.getElementById("root-image-gallery");
-        root_image_gallery.style.height = vh + "px";
-    </script>
 </body>
 
 </html>

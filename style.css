@@ -1,15 +1,33 @@
+@font-face {
+    src: url('/fonts/SFUIText-Regular.ttf') format('truetype');
+}
+
 body {
-    padding: 0 10px;
+    font: 'SF UI Text';
+}
+
+p {
+    line-height: 1.5;    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Averia Serif Libre';
+    color: #4F814B;
 }
 
 .images {
     width: 100%;
+    margin: 10px 0;
 }
 
 /* Front Page */
 
+#frontpage {
+    padding: 20px 10px;
+}
+
 .btn {
-  background-color: #58bc54;
+  background-color: #345B31;
   border-color: #58bc54;
 }
 
@@ -21,46 +39,84 @@ body {
     text-align: center;
 }
 
-
 .divider{
-    border-top: 8px solid;
+    border-top: 4px solid;
+}
+
+#navbar-divider {
+    width: 95%;
 }
 
 .small-divider{
     border-top: 3px solid;
-    width: 25%;
+    width: 45%;
     margin: 5px auto;
 }
 
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
-
   display: flex;
   align-items: center;
 }
 
-
-/* About, Welcome */
-#welcome, #about {
+/* Welcome */
+#welcome {
+    padding: 20px 10px;
     text-align: center;
-    margin: 10px 0;
 }
 
-/* Footer */
-#footer {
+
+/* About Us */ 
+#about-us {
+    background-color: #232D11;
+    color: #E7C9A9;
+    padding: 20px 10px;
     text-align: center;
+}
+
+#about-us h2 {
+    color: #E7C9A9;
 }
 
 
 /* Image Gallery */
+#root-gallery-view {
+    padding: 20px 10px;
+}
+
 .carousel-indicators, .carousel-caption {
     position: relative;
     color: black;
     left: auto;
     right: auto;
+/*     margin-bottom: 20px; */
 }
 
-.carousel-indicators {
-    
+.gallery-view-indicator-active {
+    filter: sepia(0%);
+}
+
+.gallery-view-indicator-inactive {
+    filter: sepia(100%);
+}
+
+.gallery-view-indicators {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+    margin-top: 25%;
+}
+
+
+/* Copyright */
+#copyright{
+    text-align: left;
+}
+
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 0 10px;
 }
