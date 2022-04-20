@@ -90,6 +90,10 @@ h1, h2, h3, h5, h6 {
     color: #E7C9A9;
 }
 
+.about-paragraphs {
+    margin: 30px 0;
+}
+
 
 /* Image Gallery */
 #root-image-gallery {
@@ -122,6 +126,7 @@ h1, h2, h3, h5, h6 {
     width: 150px;
     height: 150px;
 }
+
 
 /* Specialities */
 #specialties {
