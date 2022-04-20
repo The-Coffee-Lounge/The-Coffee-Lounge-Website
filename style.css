@@ -197,5 +197,9 @@ h1, h2, h3, h5, h6 {
     text-align: center;
     padding: 20px 10px;
     background-color: #232D11;
-    color: #E7C9A9;
+    color: white;
+}
+
+#branch-1, #branch-2 {
+    font-size: larger;
 }
