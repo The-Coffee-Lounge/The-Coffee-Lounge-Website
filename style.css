@@ -106,13 +106,14 @@ h1, h2, h3, h5, h6 {
     right: auto;
 }
 
-.image-gallery-indicator-active {
+.image-gallery-indicator-active, image-gallery-indicator-inactive{
     filter: brightness(100%);
 }
 
-.image-gallery-indicator-inactive {
+/* Feature disabled for now because I can't javascript ;) */
+/* .image-gallery-indicator-inactive {
     filter: brightness(50%);
-}
+} */
 
 .image-gallery-indicators {
     display: flex;
@@ -126,6 +127,17 @@ h1, h2, h3, h5, h6 {
     width: 150px;
     height: 150px;
 }
+
+/* 3D View / SH3D */
+#viewerCanvas {
+    width: 100%;
+}
+
+#levelsAndCameras {
+    text-align: center;
+    width: auto;
+}
+
 
 
 /* Specialities */
