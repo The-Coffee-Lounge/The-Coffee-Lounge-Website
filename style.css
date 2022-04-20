@@ -128,7 +128,7 @@ h1, h2, h3, h5, h6 {
     padding: 20px 10px;
     background-color: #232D11;
     color: #FFFFFF;
-    font-style: 'italic';
+    font-style: italic;
 }
 
 .specialties-btn{
@@ -140,6 +140,10 @@ h1, h2, h3, h5, h6 {
     line-height: 1.5;
 }
 
+#specialties h5 {
+    color: white;
+}
+
 #world-breakfast, #five-breakfast, #exceptional-breakfast {
     margin: 20px 0;
 }
@@ -147,17 +151,19 @@ h1, h2, h3, h5, h6 {
 #exceptional-breakfast-description{
     text-align: left;
     font-family: 'Arial';
-    font-style: 'normal'
+    font-style: normal;
 }
 
 #five-breakfast-description{
     text-align: center;
     font-family: 'Arial';
+    font-style: normal;
 }
 
 #world-breakfast-description{
     text-align: justify;
     font-family: 'Arial';
+    font-style: normal;
 }
 
 #specialties img {
