@@ -1,34 +1,44 @@
 @font-face {
-    src: url('/fonts/SFUIText-Regular.ttf') format('truetype');
+    src: url('fonts/SFUIText-Regular.ttf') format('truetype');
 }
 
 body {
-    font: 'SF UI Text';
+    font-family: 'Georgia', serif;
 }
 
 p {
-    line-height: 1.5;    
+    line-height: 2;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
     font-family: 'Averia Serif Libre';
     color: #4F814B;
 }
+
+
 
 .images {
     width: 100%;
     margin: 10px 0;
 }
 
-/* Front Page */
-
-#frontpage {
-    padding: 20px 10px;
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.btn {
+
+/* Front Page */
+#frontpage {
+    padding: 5px 10px 20px 10px;
+}
+
+.navbar-btn {
   background-color: #345B31;
   border-color: #58bc54;
+    font-family: 'Arial';
 }
 
 .navbar{
@@ -60,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+
 /* Welcome */
 #welcome {
     padding: 20px 10px;
@@ -69,9 +80,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* About Us */ 
 #about-us {
+    padding: 20px 10px;
     background-color: #232D11;
     color: #E7C9A9;
-    padding: 20px 10px;
     text-align: center;
 }
 
@@ -81,42 +92,104 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Image Gallery */
-#root-gallery-view {
-    padding: 20px 10px;
+#root-image-gallery {
+    padding: 30px 10px 20px 10px;
 }
 
 .carousel-indicators, .carousel-caption {
     position: relative;
-    color: black;
     left: auto;
     right: auto;
-/*     margin-bottom: 20px; */
 }
 
-.gallery-view-indicator-active {
-    filter: sepia(0%);
+.image-gallery-indicator-active {
+    filter: brightness(100%);
 }
 
-.gallery-view-indicator-inactive {
-    filter: sepia(100%);
+.image-gallery-indicator-inactive {
+    filter: brightness(50%);
 }
 
-.gallery-view-indicators {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-    margin-top: 25%;
+.image-gallery-indicators {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-top: 10%;
 }
+
+.image-gallery-indicator-active, .image-gallery-indicator-inactive {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+/* Specialities */
+#specialties {
+    padding: 20px 10px;
+    background-color: #232D11;
+    color: #FFFFFF;
+    font-style: 'italic';
+}
+
+.specialties-btn{
+    background-color: #E7C9A9;
+    font-family: 'Arial'; 
+}
+
+#specialties p {
+    line-height: 1.5;
+}
+
+#world-breakfast, #five-breakfast, #exceptional-breakfast {
+    margin: 20px 0;
+}
+
+#exceptional-breakfast-description{
+    text-align: left;
+    font-family: 'Arial';
+    font-style: 'normal'
+}
+
+#five-breakfast-description{
+    text-align: center;
+    font-family: 'Arial';
+}
+
+#world-breakfast-description{
+    text-align: justify;
+    font-family: 'Arial';
+}
+
+#specialties img {
+    margin: 10px 0;
+}
+
+#world-breakfast .text-center, #five-breakfast .text-center, #exceptional-breakfast .text-center {
+    padding: 0;
+}
+
 
 
 /* Copyright */
-#copyright{
-    text-align: left;
+#copyright {
+    padding: 20px 10px;
+}
+
+#tcl-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+#copyright div {
+    text-align
 }
 
 
 /* Footer */
 #footer {
     text-align: center;
-    padding: 0 10px;
+    padding: 20px 10px;
+    background-color: #232D11;
+    color: #E7C9A9;
 }
