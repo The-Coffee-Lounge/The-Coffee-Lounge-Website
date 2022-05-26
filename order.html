@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a94d6b1d27.js" crossorigin="anonymous"></script>
+
+    <!-- Averia Serif Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS Stylesheet. Don't modify -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Bootstrap JS Component. Dont modify -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+    <!-- Our CSS -->
+    <link href="style-order.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <!-- Start of Coffee Pane -->
+    <div id="coffeePane">
+        <div class="divider"></div>
+
+        <nav class="navbar row">
+            <div class="col" type=button>
+                <i id="homeBtn1" class="homeBtn fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <div id="choose">
+                <h5>Choose your <br>Coffee</h5>
+            </div>
+
+            <div class="col" type=button>
+                <i id="backBtn1" class="backBtn fa-solid fa-circle-arrow-up"></i>
+            </div>
+        </nav>
+
+        <div class="divider"></div>
+
+        <div class="row">
+            <div class="col">
+                <i class="shopBtn fa-solid fa-cart-shopping"></i>
+                <h3 id="orderCounter1">0</h3>
+            </div>
+        </div>
+
+        <!-- Coffee Carousel -->
+        <div id="coffeeCarousel" class="carousel slide" data-interval="false">
+            <ol class="carousel-indicators">
+                <li data-target="#coffeeCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#coffeeCarousel" data-slide-to="1"></li>
+                <li data-target="#coffeeCarousel" data-slide-to="2"></li>
+                <li data-target="#coffeeCarousel" data-slide-to="3"></li>
+                <li data-target="#coffeeCarousel" data-slide-to="4"></li>
+                <li data-target="#coffeeCarousel" data-slide-to="5"></li>
+                <li data-target="#coffeeCarousel" data-slide-to="6"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Frape</h5>
+                        <p>Cold Coffee</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="coffee-images/1st Frape.png" class="d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Espresso Energy</h5>
+                        <p>Hot Coffee</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="coffee-images/2nd Espresso Energy.png" class="d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Latteaholic</h5>
+                        <p>Hot Coffee</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="coffee-images/3rd Latteaholic.png" class="d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Definitely not Macchiato</h5>
+                        <p>Cold Coffee</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="coffee-images/4th Definitely not Macchiato.png" class="d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Coffee Mocha</h5>
+                        <p>Cold Coffee</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="coffee-images/5th Coffee Mocha.png" class="d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Cappucino Ultimate</h5>
+                        <p>Hot Coffee</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="coffee-images/6th Cappucino Ultimate.png" class="d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Barista's Choice</h5>
+                        <p>Hot Coffee</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="coffee-images/7th Barista's Choice.png" class="d-block w-75" alt="...">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#coffeeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#coffeeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- End of Coffee Carousel -->
+
+        <div class="row">
+            <div class="col addBtnCol">
+                <button id="addCoffee" type="button" class="addOrderBtn btn btn-lg btn-success">Add to Order</button>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <nav class="navbar row">
+            <div class="col" type=button>
+                <!--                 <i class="homeBtn fa-solid fa-arrow-right-from-bracket"></i> -->
+            </div>
+
+            <div id="choose">
+                <h5>Proceed to Pastries</h5>
+            </div>
+
+            <div class="col" type=button>
+                <i id="downBtn1" class="forwardBtn fa-solid fa-circle-arrow-down"></i>
+            </div>
+        </nav>
+
+        <div class="divider"></div>
+
+    </div>
+
+
+    <!-- Start of Pastry Pane -->
+    <div id="pastryPane">
+        <div class="divider"></div>
+
+        <nav class="navbar row">
+            <div class="col" type=button>
+                <i id="homeBtn2" class="homeBtn fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <div id="choose">
+                <h5> Choose your<br>Add-On Pastry</h5>
+            </div>
+
+            <div class="col" type=button>
+                <i id="upBtn1" class="backBtn fa-solid fa-circle-arrow-up"></i>
+            </div>
+        </nav>
+
+        <div class="divider"></div>
+
+        <div class="row">
+            <div class="col">
+                <i class="shopBtn fa-solid fa-cart-shopping"></i>
+                <h3 id="orderCounter2">0</h3>
+            </div>
+        </div>
+
+        <!-- Pastry Carousel -->
+        <div id="pastryCarousel" class="carousel slide" data-interval="false">
+            <ol class="carousel-indicators">
+                <li data-target="#pastryCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#pastryCarousel" data-slide-to="1"></li>
+                <li data-target="#pastryCarousel" data-slide-to="2"></li>
+                <li data-target="#pastryCarousel" data-slide-to="3"></li>
+                <li data-target="#pastryCarousel" data-slide-to="4"></li>
+                <li data-target="#pastryCarousel" data-slide-to="5"></li>
+                <li data-target="#pastryCarousel" data-slide-to="6"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Butter Bun</h5>
+                        <p>Lean bread coated with bread crumbs, with a slit on top and piped with margarine.</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="pastry-images/1 Butter-Bun-1.png" class="pastry-image d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Corn Bread</h5>
+                        <p>A delightful corn shaped bread that is sweet.</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="pastry-images/2 Corn-Bread.png" class="pastry-image d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Everlasting</h5>
+                        <p>A lean type of bread with six cuts on the surface forming a flower-like appearance and topped
+                            with refined sugar.</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="pastry-images/3 Everlasting.png" class="pastry-image d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Pan-de-Julia</h5>
+                        <p>Julie's take on classic pandesal made more special.</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="pastry-images/4 Pan-de-Julia-1.png" class="pastry-image d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Pandesal</h5>
+                        <p>A typical bread ideal for breakfast. Made bigger and fuller with just the right combination
+                            of spices, coated with freshly prepared bread crumbs.</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="pastry-images/5 Pandesal.png" class="pastry-image d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Empanada</h5>
+                        <p>A baked or fried pastry stuffed with any of a variety of fillings</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="pastry-images/6 Empanada.png" class="pastry-image d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Ensaymada with Cheese</h5>
+                        <p>Is a soft, sweet dough pastry covered with butter and sugar then topped with lots of grated
+                            cheese.</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="pastry-images/7 Ensaymada-Cheese-1.png" class="pastry-image d-block w-75" alt="...">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#pastryCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#pastryCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- End of Add-On Pastry Carousel -->
+
+        <div class="row">
+            <div class="col addBtnCol">
+                <button id="addPastry" type="button" class="addOrderBtn btn btn-lg btn-success">Add to Order</button>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <nav class="navbar row">
+            <div class="col" type=button>
+                <!--                 <i class="homeBtn fa-solid fa-arrow-right-from-bracket"></i> -->
+            </div>
+
+            <div id="choose">
+                <h5>Proceed to Meal</h5>
+            </div>
+
+            <div class="col" type=button>
+                <i id="downBtn2" class="forwardBtn fa-solid fa-circle-arrow-down"></i>
+            </div>
+        </nav>
+
+        <div class="divider"></div>
+    </div>
+
+
+    <!-- Start of Meal Pane -->
+    <div id="mealPane">
+        <div class="divider"></div>
+
+        <nav class="navbar row">
+            <div class="col" type=button>
+                <i  id="homeBtn3" class="homeBtn fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <div id="choose">
+                <h5> Choose your<br>add-on meal</h5>
+            </div>
+
+            <div class="col" type=button>
+                <i id="upBtn2" class="backBtn fa-solid fa-circle-arrow-up"></i>
+            </div>
+        </nav>
+
+        <div class="divider"></div>
+
+        <div class="row">
+            <div class="col">
+                <i class="shopBtn fa-solid fa-cart-shopping"></i>
+                <h3 id="orderCounter3">0</h3>
+            </div>
+        </div>
+
+        <!-- Meal Carousel -->
+        <div id="mealCarousel" class="carousel slide" data-interval="false">
+            <ol class="carousel-indicators">
+                <li data-target="#mealCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mealCarousel" data-slide-to="1"></li>
+                <li data-target="#mealCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Small Almusal</h5>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="meal-images/1 Small Umagahan.png" class="d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Medium Almusal</h5>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="meal-images/2 Medium Umagahan.png" class="d-block w-75" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="carousel-caption d-md-block">
+                        <h5>Ultimate Almusal</h5>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="meal-images/3 Ultimate Umagahan.png" class="d-block w-75" alt="...">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#mealCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mealCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- End of Meal Carousel -->
+
+        <div class="row">
+            <div class="col addBtnCol">
+                <button id="addMeal" type="button" class="addOrderBtn btn btn-lg btn-success">Add to Order</button>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <nav class="navbar row">
+            <div class="col" type=button>
+                <!--                 <i class="homeBtn fa-solid fa-arrow-right-from-bracket"></i> -->
+            </div>
+
+            <div id="choose">
+                <h5>Finalize your Order</h5>
+            </div>
+
+            <div class="col" type=button>
+                <i id="downBtn3" class="forwardBtn fa-solid fa-circle-arrow-down"></i>
+            </div>
+        </nav>
+
+        <div class="divider"></div>
+    </div>
+
+
+    <!-- Start of Order List -->
+    <div id="orderListPane">
+        <nav id="orderListPaneNav" class="navbar row">
+            <div class="col" type=button>
+                <i id="homeBtn4" class="homeBtn fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <div id="choose">
+                <h4>Your Orders:</h4>
+            </div>
+
+            <div class="col" type=button>
+                <i id="upBtn3" class="backBtn fa-solid fa-circle-arrow-up"></i>
+            </div>
+        </nav>
+
+        <div id="orderList">
+            <p class="itemsCounter" id="coffeeItemsCounter">
+                Coffee (1 Item)
+            </p>
+            <div id="mealItems">
+                <div class="orderListItem row" id="coffeeItem1">
+                    <div class="col-4">
+                        <img class="orderListImages" src="coffee-images/1st Frape.png">
+                    </div>
+                    <div class="col-8">
+                        <p class="orderListItemName">Frape</p>
+                        <p class="orderListItemPrice">PHP 35.00</p>
+
+                        <div class="quantitySelector">
+                            <label for="coffeeItem1QuantitySelector">Quantity:</label>
+                            <select name="coffeeItem1QuantitySelector" id="coffeeItem1QuantitySelector">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="itemsCounter" id="pastryItemsCounter">
+                Add-On Pastry (1 Item)
+            </p>
+            <div id="pastryItems">
+                <div class="orderListItem row" id="pastryItem1">
+                    <div class="col-4">
+                        <img class="orderListImages" src="pastry-images/7 Ensaymada-Cheese-1.png">
+                    </div>
+                    <div class="col-8">
+                        <p class="orderListItemName">Ensaymada</p>
+                        <p class="orderListItemPrice">PHP 10.00</p>
+
+                        <div class="quantitySelector">
+                            <label for="pastryItem1QuantitySelector">Quantity:</label>
+                            <select name="pastryItem1QuantitySelector" id="pastryItem1QuantitySelector">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="itemsCounter" id="mealItemsCounter">
+                Add-On Meal (1 Item)
+            </p>
+
+            <div id="mealItems">
+                <div class="orderListItem row" id="mealItem1">
+                    <div class="col-4">
+                        <img class="orderListImages" src="meal-images/3 Ultimate Umagahan.png">
+                    </div>
+                    <div class="col-8">
+                        <p class="orderListItemName">Ultimate Umagahan</p>
+                        <p class="orderListItemPrice">PHP 75.00</p>
+
+                        <div class="quantitySelector">
+                            <label for="mealItem1QuantitySelector">Quantity:</label>
+                            <select name="mealItem1QuantitySelector" id="mealItem1QuantitySelector">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bottomBar" class="row">
+            <div class="col-6">
+                <span id="totalItems">Total items: 3</span>
+                <p id="totalPrice">PHP 120.00</p>
+            </div>
+            <div class="col-6">
+                <button id="checkoutBtn" type="button" class="btn btn-lg btn-success">Checkout</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script-order.js"></script>
+</body>
+
+</html>

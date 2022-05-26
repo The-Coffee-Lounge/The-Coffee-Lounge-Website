@@ -1,0 +1,136 @@
+body {
+    background-color: #232D11;
+/*     background-image: url("images/green-background.jpg");
+    background-position: center; */
+    font-family: 'Georgia', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Averia Serif Libre';
+    color: #4F814B;
+}
+
+.navbar {
+    background-color:  #e8ccac;
+}
+
+.divider{
+    border-top: 4px solid black;
+}
+
+.carousel-caption {
+    padding: 20px;
+    position: revert;
+    color: white;
+}
+
+.addBtnCol {
+    text-align: center;
+}
+
+.addOrderBtn {
+    color:  black;
+    background-color: #e8ccac;
+    margin: 25px;
+}
+
+.row{
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#choose {
+  font-family: 'Arial';
+    text-align: center;
+}
+
+#orderListPane {
+    background: #232D11;
+    color: white;
+    padding: 5px;
+}
+
+.homeBtn {
+    float: left;
+    font-size: 45px;
+    transform: rotate(180deg);
+}
+
+.backBtn {
+    float: right;
+    font-size: 45px;
+}
+
+.forwardBtn {
+    float: right;
+    font-size: 45px;
+}
+
+.shopBtn {
+    padding: 5px;
+    float: right;
+    font-size: 45px;
+    color: #e8ccac;
+}
+
+#orderList {
+    padding: 10px;
+}
+
+#coffeeItems, #pastryItems, #mealItems {
+    margin-bottom: 20px;
+}
+
+.itemsCounter {
+    text-align: center;
+}
+
+.orderListImages {
+    width: 100px;
+    height: 100px;
+}
+
+.orderListItemPrice, .orderListItemName, .quantitySelector {
+    text-align: right;
+}
+
+.orderListItemName, .orderListItemPrice {
+    margin-bottom: 0;
+}
+
+.orderListItemPrice {
+    font-size: 28px;
+}
+
+.orderListItem {
+    border: 3px solid white;
+}
+
+#orderListPaneNav {
+    color: black;
+}
+
+#bottomBar {
+    padding: 20px;
+}
+
+#totalPrice {
+    font-size: 20px;
+}
+
+#checkoutBtn {
+    float:right;
+    color:  black;
+    background-color: #e8ccac;
+}
+
+.mealCarousel {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#orderCounter1, #orderCounter2, #orderCounter3 {
+    float: right;
+    color: #e8ccac;
+}
