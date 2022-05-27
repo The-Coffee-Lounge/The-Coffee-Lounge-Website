@@ -29,7 +29,6 @@
 
     <!-- Our CSS & JS -->
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
 </head>
 
 
@@ -42,7 +41,7 @@
         <nav class="navbar">
             <div class="row mx-auto">
                 <div class="col navbar-item align-items-center d-flex">
-                    <a href="#about-us" type="button" class="navbar-btn btn btn-success btn-lg">ABOUT</a>
+                    <a id="aboutBtn" type="button" class="navbar-btn btn btn-success btn-lg">ABOUT</a>
                 </div>
 
                 <div class="col navbar-item d-flex">
@@ -50,7 +49,7 @@
                 </div>
 
                 <div class="col navbar-item align-items-center d-flex">
-                    <a href="order.html" type="button" class="navbar-btn btn btn-success btn-lg">MENU</a>
+                    <a id="menuBtn" type="button" class="navbar-btn btn btn-success btn-lg">MENU</a>
                 </div>
 
             </div>
@@ -60,7 +59,6 @@
         <center>
             <div id="navbar-divider" class="divider"></div>
         </center>
-        <!-- To Jay: okay po!-->
 
         <!-- Front Page Title -->
         <div class="header">
@@ -431,6 +429,9 @@
         B3 L35 St.Joseph Village 7 Phase 5A, Brgy. Gulod,<br>City of Cabuyao 4025
     </div>
 </body>
+
+<!-- Our JS. Placed here so we let all elements load first before we can do operations to them -->
+<script src="script.js"></script>
 
 <!--  SH3D JS -->
 <!-- Placed here at the bottom instead of the top to load it after the body has been loaded -->
