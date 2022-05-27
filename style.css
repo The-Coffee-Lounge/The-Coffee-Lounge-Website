@@ -155,6 +155,7 @@ label, select {
 .specialties-btn{
     background-color: #E7C9A9;
     font-family: 'Arial'; 
+    color: black;
 }
 
 #specialties p {
